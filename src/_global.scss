@@ -1,0 +1,49 @@
+@import 'variables';
+// @import 'config';
+
+.text--bold {
+  font-weight: 700;
+}
+
+.text--light {
+  font-weight: 300;
+}
+
+.text--3 {
+  font-size: 0.75rem;
+}
+
+.text--6 {
+  font-size: 1.5rem;
+}
+
+.text--8 {
+  font-size: 2rem;
+}
+
+.btn {
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.btn-yellow {
+  background-color: $color-yellow;
+  color: $primary-color-dark;
+
+  &:hover {
+    @include transition-ease(100ms);
+    background-color: $color-yellow-light;
+  }
+}
+
+.btn-orange {
+  background-color: $color-orange;
+  color: $light;
+
+  &:hover {
+    @include transition-ease(100ms);
+    background-color: $color-orange-light;
+  }
+}

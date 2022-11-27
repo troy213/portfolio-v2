@@ -9,9 +9,9 @@ const Experiences = () => {
         <div className='experiences__content'>
           <div className='experiences__content--left'>
             <p className='experiences__content-title text--bold'>Niomic</p>
-            <p className='experiences__content-time text--light-italic text--3'>
+            <em className='experiences__content-time text--light text--3'>
               2019 - current
-            </p>
+            </em>
           </div>
           <div className='experiences__content--right'>
             <p className='experiences__content-major text--bold'>
@@ -25,10 +25,10 @@ const Experiences = () => {
               Firebase, and I always believe learning from many sources are the
               best way to improve your knowledge...
             </p>
-            <p className='experiences__content-location text--light-italic'>
+            <em className='experiences__content-location text--light'>
               <i className='experiences__content-location-icon'></i>
               Online
-            </p>
+            </em>
           </div>
         </div>
       </div>
