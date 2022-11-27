@@ -1,3 +1,4 @@
+import NightlightIcon from '@mui/icons-material/Nightlight'
 import './index.scss'
 
 const Navbar = () => {
@@ -12,7 +13,9 @@ const Navbar = () => {
         <li className='navbar__link'>Skills</li>
         <li className='navbar__link'>Projects</li>
         <li className='navbar__link'>Contact</li>
-        <li className='navbar__link'>-icon-</li>
+        <li className='navbar__link'>
+          <NightlightIcon />
+        </li>
       </ul>
     </nav>
   )

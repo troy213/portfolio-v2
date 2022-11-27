@@ -22,10 +22,18 @@
 }
 
 .btn {
+  display: flex;
+  justify-content: center;
+  gap: 0.5em;
+  align-items: center;
   padding: 0.5em 1em;
   border: none;
   border-radius: 0.5rem;
   cursor: pointer;
+}
+
+.btn-icon {
+  font-size: 1em !important;
 }
 
 .btn-yellow {

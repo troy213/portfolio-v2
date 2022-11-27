@@ -1,3 +1,4 @@
+import ExitToAppIcon from '@mui/icons-material/ExitToApp'
 import './index.scss'
 
 const Card = () => {
@@ -6,7 +7,9 @@ const Card = () => {
       <div className='card__header'>
         <p className='card__title text--bold'>E-Commerce</p>
         <button>-icon-</button>
-        <button>-icon-</button>
+        <button>
+          <ExitToAppIcon />
+        </button>
       </div>
       <div className='card__body'>
         <p className='card__desc text--light'>

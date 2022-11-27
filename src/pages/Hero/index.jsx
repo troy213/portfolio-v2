@@ -1,3 +1,4 @@
+import DownloadIcon from '@mui/icons-material/Download'
 import './index.scss'
 
 const Hero = () => {
@@ -13,7 +14,7 @@ const Hero = () => {
           Science on 2018
         </p>
         <button className='btn btn-orange'>
-          Resume <i>-icon-</i>
+          Resume <DownloadIcon className='btn-icon' />
         </button>
         <div className='hero__icon-container'>
           <i className='hero__icon'>-icon-</i>
