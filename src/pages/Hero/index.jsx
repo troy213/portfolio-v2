@@ -1,4 +1,10 @@
-import DownloadIcon from '@mui/icons-material/Download'
+import {
+  DownloadIcon,
+  InstagramIcon,
+  FacebookIcon,
+  LinkedinIcon,
+  GithubIcon,
+} from '../../assets/icons'
 import './index.scss'
 
 const Hero = () => {
@@ -17,10 +23,10 @@ const Hero = () => {
           Resume <DownloadIcon className='btn-icon' />
         </button>
         <div className='hero__icon-container'>
-          <i className='hero__icon'>-icon-</i>
-          <i className='hero__icon'>-icon-</i>
-          <i className='hero__icon'>-icon-</i>
-          <i className='hero__icon'>-icon-</i>
+          <InstagramIcon className='hero__icon icon' />
+          <FacebookIcon className='hero__icon icon' />
+          <LinkedinIcon className='hero__icon icon' />
+          <GithubIcon className='hero__icon icon' />
         </div>
       </div>
       <div className='hero__right'>

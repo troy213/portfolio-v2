@@ -1,25 +1,34 @@
-import ExitToAppIcon from '@mui/icons-material/ExitToApp'
+import { GithubIcon, ExitToAppIcon } from '../../assets/icons'
 import './index.scss'
 
-const Card = () => {
+const Card = (props) => {
+  const { title, githubUrl, appUrl, description, tags } = props
+
   return (
     <div className='card'>
       <div className='card__header'>
-        <p className='card__title text--bold'>E-Commerce</p>
-        <button>-icon-</button>
-        <button>
-          <ExitToAppIcon />
-        </button>
+        <p className='card__title text--bold'>{title}</p>
+        <a href={githubUrl}>
+          <button>
+            <GithubIcon />
+          </button>
+        </a>
+        <a href={appUrl}>
+          <button>
+            <ExitToAppIcon />
+          </button>
+        </a>
       </div>
       <div className='card__body'>
-        <p className='card__desc text--light'>
-          A fully functioning RESTful e-commerce website project with ReactJS,
-          Express, MySQL, JWT Auth, and BCrypt for storing passwords.
-        </p>
+        <p className='card__desc text--light'>{description}</p>
         <div className='card__tag-container'>
-          <div className='card__tag text--light text--3'>React</div>
-          <div className='card__tag text--light text--3'>Express</div>
-          <div className='card__tag text--light text--3'>MySQL</div>
+          {tags.map((tag, index) => {
+            return (
+              <div className='card__tag text--light text--3' key={index}>
+                {tag}
+              </div>
+            )
+          })}
         </div>
       </div>
     </div>

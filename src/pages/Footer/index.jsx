@@ -1,3 +1,9 @@
+import {
+  InstagramIcon,
+  FacebookIcon,
+  LinkedinIcon,
+  GithubIcon,
+} from '../../assets/icons'
 import './index.scss'
 
 const Footer = () => {
@@ -7,18 +13,35 @@ const Footer = () => {
         <div className='footer__left'>
           <p className='footer__left-text text--bold text--8'>
             There’s a lot of good cafe in Southern Jakarta. I love coffee! maybe
-            we can get in touch. Start by{' '}
-            <span className='footer__email-link'>saying hello!</span>
+            we can get in touch.
+          </p>
+          <p className='footer__left-text-email text--bold text--8'>
+            Start by{' '}
+            <a href='#' className='footer__email-link'>
+              saying hello!
+            </a>
           </p>
         </div>
         <div className='footer__right'>
           <p className='footer__text text--bold'>Information</p>
           <p className='footer__text text--light'>South Tangerang, Banten</p>
           <button className='btn btn-yellow'>Back to top</button>
-          <div className='footer__socials'>
-            <i className='footer__socials-icon'>-icon-</i>
+          <a href='#' className='footer__socials'>
+            <InstagramIcon className='footer__socials-icon' />
             <p className='footer__text text--light'>Instagram</p>
-          </div>
+          </a>
+          <a href='#' className='footer__socials'>
+            <FacebookIcon className='footer__socials-icon' />
+            <p className='footer__text text--light'>Facebook</p>
+          </a>
+          <a href='#' className='footer__socials'>
+            <LinkedinIcon className='footer__socials-icon' />
+            <p className='footer__text text--light'>Linkedin</p>
+          </a>
+          <a href='#' className='footer__socials'>
+            <GithubIcon className='footer__socials-icon' />
+            <p className='footer__text text--light'>Github</p>
+          </a>
         </div>
       </div>
       <div className='footer__copyright-container'>

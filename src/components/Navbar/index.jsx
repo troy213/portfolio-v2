@@ -1,4 +1,4 @@
-import NightlightIcon from '@mui/icons-material/Nightlight'
+import { MoonIcon, MenuIcon } from '../../assets/icons'
 import './index.scss'
 
 const Navbar = () => {
@@ -14,7 +14,10 @@ const Navbar = () => {
         <li className='navbar__link'>Projects</li>
         <li className='navbar__link'>Contact</li>
         <li className='navbar__link'>
-          <NightlightIcon />
+          <MoonIcon />
+        </li>
+        <li className='navbar__menu'>
+          <MenuIcon />
         </li>
       </ul>
     </nav>

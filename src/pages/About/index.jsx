@@ -1,3 +1,5 @@
+import { UserIcon, CalendarIcon, MapIcon } from '../../assets/icons'
+import { profilePhotoPng } from '../../assets/images'
 import './index.scss'
 
 const About = () => {
@@ -5,16 +7,28 @@ const About = () => {
     <section className='about'>
       <h3 className='about__title text--bold text--8'>About Me</h3>
       <div className='about__detail-wrapper'>
-        <img src='#' className='about__profile-photo' alt='profile-photo' />
+        <img src={'#'} className='about__profile-photo' alt='profile-photo' />
         <div className='about__detail'>
-          <i className='about__detail-icon'>-icon-</i>
-          <div className='about__detail-content'>
-            <p className='text--bold'>Name</p>
-            <p className='text--light'>Tritera Erlangga</p>
-            <p className='text--bold'>Age</p>
-            <p className='text--light'>27 Years</p>
-            <p className='text--bold'>Location</p>
-            <p className='text--light'>South Tangerang</p>
+          <div className='about__detail-content-wrapper'>
+            <UserIcon className='about__detail-icon' />
+            <div className='about__detail-content'>
+              <p className='text--bold'>Name</p>
+              <p className='text--light'>Tritera Erlangga</p>
+            </div>
+          </div>
+          <div className='about__detail-content-wrapper'>
+            <CalendarIcon className='about__detail-icon' />
+            <div className='about__detail-content'>
+              <p className='text--bold'>Age</p>
+              <p className='text--light'>27 Years</p>
+            </div>
+          </div>
+          <div className='about__detail-content-wrapper'>
+            <MapIcon className='about__detail-icon' />
+            <div className='about__detail-content'>
+              <p className='text--bold'>Location</p>
+              <p className='text--light'>South Tangerang</p>
+            </div>
           </div>
         </div>
         <p className='about__desc text--light'>
