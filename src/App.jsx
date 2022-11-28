@@ -5,27 +5,24 @@ import { Hero, About, Experiences, Projects, Skills, Footer } from './pages'
 const App = () => {
   const [isDarkMode, setIsDarkMode] = useState(false)
 
-  useEffect(() => {
-    const theme = localStorage.getItem('theme')
+  const toggleDarkMode = () => {
+    setIsDarkMode(!isDarkMode)
+    localStorage.setItem('theme', !isDarkMode)
+  }
 
-    console.log(theme)
-    if (theme) {
+  useEffect(() => {
+    const theme = JSON.parse(localStorage.getItem('theme'))
+
+    if (theme !== null) {
       setIsDarkMode(theme)
-    } else {
-      localStorage.setItem('theme', isDarkMode)
     }
   }, [])
-
-  console.log(isDarkMode)
 
   return (
     <div
       className={`container${isDarkMode ? ' theme--dark' : ' theme--light'}`}
     >
-      <Navbar
-        isDarkMode={isDarkMode}
-        toggleDarkMode={() => setIsDarkMode(!isDarkMode)}
-      />
+      <Navbar isDarkMode={isDarkMode} toggleDarkMode={() => toggleDarkMode()} />
       <Hero />
       <About />
       <Experiences />

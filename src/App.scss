@@ -17,6 +17,7 @@
   }
 
   .navbar,
+  .menu,
   .hero,
   .about,
   .skills,
@@ -25,19 +26,37 @@
     @include transition-ease(500ms);
   }
 
-  .navbar a:visited,
-  .navbar a:link {
+  .header a:visited,
+  .header a:link {
     color: $primary-color-light;
   }
 
-  .navbar li a:hover {
+  .header li a:hover {
     color: $color-yellow;
     transition: none;
+  }
+
+  .menu__item-list {
+    li.menu__item {
+      transition: none;
+    }
   }
 }
 
 .theme--light {
+  .menu a:visited,
+  .menu a:link {
+    color: $primary-color;
+  }
+
+  .menu__item-list {
+    li.menu__item {
+      transition: none;
+    }
+  }
+
   .navbar,
+  .menu,
   .hero,
   .about,
   .skills,

@@ -1,14 +1,17 @@
-.navbar {
+header {
   top: 0;
-  background-color: $light;
   position: sticky;
+  z-index: 1;
+}
+
+.navbar {
+  background-color: $light;
   padding: 2em 1em;
   display: flex;
   justify-content: space-between;
   align-items: center;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   gap: 2rem;
-  z-index: 1;
 
   &__logo {
     cursor: pointer;
