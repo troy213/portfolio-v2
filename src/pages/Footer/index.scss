@@ -53,6 +53,11 @@
     gap: 1rem;
     color: $light;
 
+    &:visited,
+    &:link {
+      color: $light;
+    }
+
     &:hover {
       color: $color-yellow-light;
     }
@@ -71,9 +76,16 @@
     gap: 0.75rem;
   }
 
-  &__text {
+  &__copyright-right {
     display: flex;
-    align-items: center;
-    gap: 0.5rem;
+    flex-direction: column;
+    gap: 0.75rem;
+
+    & p {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      white-space: nowrap;
+    }
   }
 }

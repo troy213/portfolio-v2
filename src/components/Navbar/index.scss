@@ -22,6 +22,16 @@
 
   & li {
     cursor: pointer;
+
+    &:hover,
+    a:hover {
+      color: $color-yellow;
+    }
+  }
+
+  & a:visited,
+  & a:link {
+    color: $primary-color;
   }
 
   &__link {

@@ -1,6 +1,8 @@
-import { MoonIcon, MenuIcon } from '../../assets/icons'
+import { MoonIcon, MenuIcon, SunIcon } from '../../assets/icons'
 
-const Navbar = () => {
+const Navbar = (props) => {
+  const { isDarkMode, toggleDarkMode } = props
+
   return (
     <nav className='navbar color--primary'>
       <a href='#home' className='navbar__logo text--bold text--mono'>
@@ -22,8 +24,8 @@ const Navbar = () => {
         <li className='navbar__link text--mono'>
           <a href='#contact'>Contact</a>
         </li>
-        <li className='navbar__link text--mono'>
-          <MoonIcon />
+        <li className='navbar__link text--mono' onClick={toggleDarkMode}>
+          {isDarkMode ? <SunIcon /> : <MoonIcon />}
         </li>
         <li className='navbar__menu'>
           <MenuIcon />

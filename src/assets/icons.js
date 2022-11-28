@@ -8,6 +8,7 @@ import WorkOutlineOutlinedIcon from '@mui/icons-material/WorkOutlineOutlined'
 import PsychologyOutlinedIcon from '@mui/icons-material/PsychologyOutlined'
 import DesignServicesOutlinedIcon from '@mui/icons-material/DesignServicesOutlined'
 import LocalPhoneOutlinedIcon from '@mui/icons-material/LocalPhoneOutlined'
+import LightModeOutlinedIcon from '@mui/icons-material/LightModeOutlined'
 
 // Local SVG
 import { ReactComponent as AudacityIcon } from './icons/audacity.svg'
@@ -75,4 +76,5 @@ export {
   PsychologyOutlinedIcon as SkillsIcon,
   DesignServicesOutlinedIcon as ProjectsIcon,
   LocalPhoneOutlinedIcon as ContactIcon,
+  LightModeOutlinedIcon as SunIcon,
 }

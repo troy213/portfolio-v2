@@ -36,6 +36,10 @@
     font-size: 1.5rem;
   }
 
+  &__desc {
+    text-align: center;
+  }
+
   &__icon-container {
     display: flex;
     justify-content: center;
@@ -44,9 +48,14 @@
 
   &__icon {
     cursor: pointer;
+
+    &:hover {
+      color: $color-yellow;
+    }
   }
 
   & button {
     padding: 1em 2em;
+    margin: 1.5rem 0;
   }
 }

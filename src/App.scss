@@ -3,14 +3,17 @@
 .theme--dark {
   .color--primary {
     color: $primary-color-light;
+    @include transition-ease(500ms);
   }
 
   .color--primary-light,
   .hero__desc,
+  .hero__icon-container > a,
   .about__desc,
   .about__detail-content > p:last-child,
   .skills__subtitle {
     color: $light;
+    @include transition-ease(500ms);
   }
 
   .navbar,
@@ -19,5 +22,32 @@
   .skills,
   .projects {
     background-color: $theme-dark;
+    @include transition-ease(500ms);
+  }
+
+  .navbar a:visited,
+  .navbar a:link {
+    color: $primary-color-light;
+  }
+
+  .navbar li a:hover {
+    color: $color-yellow;
+    transition: none;
+  }
+}
+
+.theme--light {
+  .navbar,
+  .hero,
+  .about,
+  .skills,
+  .projects,
+  .color--primary,
+  .color--primary-light,
+  .hero__desc,
+  .about__desc,
+  .about__detail-content > p:last-child,
+  .skills__subtitle {
+    @include transition-ease(500ms);
   }
 }
