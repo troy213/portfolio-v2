@@ -3,17 +3,16 @@
 .theme--dark {
   .color--primary {
     color: $primary-color-light;
-    @include transition-ease(500ms);
+    transition: color 500ms ease-in-out;
   }
 
   .color--primary-light,
   .hero__desc,
-  .hero__icon-container > a,
   .about__desc,
   .about__detail-content > p:last-child,
   .skills__subtitle {
     color: $light;
-    @include transition-ease(500ms);
+    transition: color 500ms ease-in-out;
   }
 
   .navbar,
@@ -23,38 +22,11 @@
   .skills,
   .projects {
     background-color: $theme-dark;
-    @include transition-ease(500ms);
-  }
-
-  .header a:visited,
-  .header a:link {
-    color: $primary-color-light;
-  }
-
-  .header li a:hover {
-    color: $color-yellow;
-    transition: none;
-  }
-
-  .menu__item-list {
-    li.menu__item {
-      transition: none;
-    }
+    transition: background-color 500ms ease-in-out;
   }
 }
 
 .theme--light {
-  .menu a:visited,
-  .menu a:link {
-    color: $primary-color;
-  }
-
-  .menu__item-list {
-    li.menu__item {
-      transition: none;
-    }
-  }
-
   .navbar,
   .menu,
   .hero,
@@ -67,6 +39,20 @@
   .about__desc,
   .about__detail-content > p:last-child,
   .skills__subtitle {
-    @include transition-ease(500ms);
+    transition: background-color 500ms ease-in-out, color 500ms ease-in-out;
   }
+}
+
+// exception
+.hero__icon:not(:hover),
+.hero__icon:hover,
+.navbar__link:not(:hover),
+.navbar__link:hover,
+.navbar__link > a:not(:hover),
+.navbar__link > a:hover,
+.navbar__menu:not(:hover),
+.navbar__menu:hover,
+.menu__item.color--primary:not(:hover),
+.menu__item.color--primary:hover {
+  transition: none;
 }

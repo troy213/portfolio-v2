@@ -10,6 +10,7 @@
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
   top: -250px;
   z-index: -1;
+  transition: top 500ms ease-in-out, background-color 500ms ease-in-out !important;
 
   &.collapse {
     top: 100%;
@@ -30,10 +31,10 @@
     gap: 0.5rem;
     color: $primary-color;
     width: 90px;
+    cursor: pointer;
 
-    &:hover {
-      color: $color-yellow !important;
-      cursor: pointer;
+    &.color--primary:hover {
+      color: $color-yellow;
     }
   }
 

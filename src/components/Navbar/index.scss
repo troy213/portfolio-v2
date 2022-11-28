@@ -29,12 +29,8 @@ header {
     &:hover,
     a:hover {
       color: $color-yellow;
+      transition: none;
     }
-  }
-
-  & a:visited,
-  & a:link {
-    color: $primary-color;
   }
 
   &__link {

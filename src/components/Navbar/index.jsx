@@ -9,31 +9,47 @@ const Navbar = (props) => {
 
   return (
     <header>
-      <nav className='navbar color--primary'>
-        <a href='/' className='navbar__logo text--bold text--mono'>
+      <nav className='navbar'>
+        <a
+          href='/'
+          className='navbar__logo text--bold text--mono color--primary'
+        >
           Erlangga's Journey
         </a>
         <ul>
           <li className='navbar__link text--mono'>
-            <a href='#home'>Home</a>
+            <a href='#home' className='color--primary'>
+              Home
+            </a>
           </li>
           <li className='navbar__link text--mono'>
-            <a href='#experiences'>Experiences</a>
+            <a href='#experiences' className='color--primary'>
+              Experiences
+            </a>
           </li>
           <li className='navbar__link text--mono'>
-            <a href='#skills'>Skills</a>
+            <a href='#skills' className='color--primary'>
+              Skills
+            </a>
           </li>
           <li className='navbar__link text--mono'>
-            <a href='#projects'>Projects</a>
+            <a href='#projects' className='color--primary'>
+              Projects
+            </a>
           </li>
           <li className='navbar__link text--mono'>
-            <a href='#contact'>Contact</a>
+            <a href='#contact' className='color--primary'>
+              Contact
+            </a>
           </li>
-          <li className='navbar__link text--mono' onClick={toggleDarkMode}>
+          <li
+            className='navbar__link text--mono color--primary'
+            onClick={toggleDarkMode}
+          >
             {isDarkMode ? <SunIcon /> : <MoonIcon />}
           </li>
           <li
-            className='navbar__menu'
+            className='navbar__menu color--primary'
             onClick={() => setIsCollapsed(!isCollapsed)}
           >
             <MenuIcon />

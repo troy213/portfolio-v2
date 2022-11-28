@@ -28,18 +28,34 @@ const Hero = () => {
         <button className='btn btn-orange'>
           Resume <DownloadIcon className='btn-icon' />
         </button>
-        <div className='hero__icon-container color--primary-light'>
-          <a href='https://www.instagram.com/tritera.erlangga'>
-            <InstagramIcon className='hero__icon icon' />
+        <div className='hero__icon-container'>
+          <a
+            href='https://www.instagram.com/tritera.erlangga'
+            target='_blank'
+            rel='noreferrer noopener'
+          >
+            <InstagramIcon className='hero__icon icon color--primary-light' />
           </a>
-          <a href='https://www.facebook.com/dev.triteraerlangga'>
-            <FacebookIcon className='hero__icon icon' />
+          <a
+            href='https://www.facebook.com/dev.triteraerlangga'
+            target='_blank'
+            rel='noreferrer noopener'
+          >
+            <FacebookIcon className='hero__icon icon color--primary-light' />
           </a>
-          <a href='https://www.linkedin.com/in/tritera-erlangga-0ab7b5183'>
-            <LinkedinIcon className='hero__icon icon' />
+          <a
+            href='https://www.linkedin.com/in/tritera-erlangga-0ab7b5183'
+            target='_blank'
+            rel='noreferrer noopener'
+          >
+            <LinkedinIcon className='hero__icon icon color--primary-light' />
           </a>
-          <a href='https://github.com/troy213'>
-            <GithubIcon className='hero__icon icon' />
+          <a
+            href='https://github.com/troy213'
+            target='_blank'
+            rel='noreferrer noopener'
+          >
+            <GithubIcon className='hero__icon icon color--primary-light' />
           </a>
         </div>
       </div>
