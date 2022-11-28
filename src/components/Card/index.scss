@@ -1,0 +1,80 @@
+@import '../../variables';
+@import '../../config';
+
+.card {
+  display: flex;
+  border-radius: 1.5rem;
+  width: 300px;
+  min-height: 300px;
+  cursor: pointer;
+
+  &__content-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-height: 100%;
+    width: 100%;
+    color: $light;
+    gap: 1.5rem;
+    border-radius: 1.5rem;
+    padding: 1.5rem;
+  }
+
+  &:hover &__content-wrapper,
+  &.active &__content-wrapper {
+    @include bg-color-opacity($dark, 70%);
+    backdrop-filter: blur(4px);
+
+    .card__btn-container,
+    .card__body {
+      opacity: 1;
+    }
+
+    @include transition-ease(250ms);
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__btn-container {
+    display: flex;
+    gap: 1rem;
+    opacity: 0;
+
+    & button {
+      padding: 0.5rem;
+      border: none;
+      border-radius: 0.5rem;
+      color: $dark;
+      cursor: pointer;
+      @include bg-color-opacity($light, 70%);
+
+      &:hover {
+        @include bg-color-opacity($light, 90%);
+      }
+    }
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: space-between;
+    opacity: 0;
+  }
+
+  &__tag-container {
+    display: flex;
+    gap: 1rem;
+  }
+
+  &__tag {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    color: $dark;
+    @include bg-color-opacity($light, 70%);
+  }
+}

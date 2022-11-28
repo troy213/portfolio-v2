@@ -1,0 +1,43 @@
+.hero {
+  padding: 2rem 1rem 0;
+  min-height: calc(100vh - 91px);
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  gap: 2rem;
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  &__right {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__pre-title {
+    display: block;
+    font-size: 3rem;
+  }
+
+  &__title {
+    display: block;
+    font-size: 4rem;
+    text-align: center;
+  }
+
+  &__subtitle {
+    display: block;
+    font-size: 1.5rem;
+  }
+
+  &__icon-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+}

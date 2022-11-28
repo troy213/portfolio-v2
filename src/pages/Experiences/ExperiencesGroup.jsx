@@ -5,7 +5,7 @@ const ExperiencesGroup = (props) => {
 
   return (
     <>
-      <p className='experiences__subtitle text--6'>{title}</p>
+      <p className='experiences__subtitle text--6 text--mono'>{title}</p>
       <div className='experiences__timeline'>
         {data.map((experience, index) => {
           const { experienceTitle, time, major, description, location } =
@@ -14,7 +14,7 @@ const ExperiencesGroup = (props) => {
           return (
             <div className='experiences__content' key={index}>
               <div className='experiences__content--left'>
-                <p className='experiences__content-title text--bold'>
+                <p className='experiences__content-title text--bold text--mono'>
                   {experienceTitle}
                 </p>
                 <em className='experiences__content-time text--light text--3'>
@@ -22,8 +22,10 @@ const ExperiencesGroup = (props) => {
                 </em>
               </div>
               <div className='experiences__content--right'>
-                <p className='experiences__content-major text--bold'>{major}</p>
-                <p className='experiences__content-desc text--light'>
+                <p className='experiences__content-major text--bold text--mono'>
+                  {major}
+                </p>
+                <p className='experiences__content-desc text--light line-height--6'>
                   {description}
                 </p>
                 <em className='experiences__content-location text--light'>

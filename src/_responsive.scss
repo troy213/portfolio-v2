@@ -1,2 +1,125 @@
 @include media-desktop {
+  .navbar {
+    padding: 2em 3em;
+
+    &__link {
+      display: flex;
+      align-items: center;
+    }
+
+    &__menu {
+      display: none;
+    }
+  }
+
+  .hero {
+    padding: 0 8rem;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+
+    &__left {
+      align-items: flex-start;
+    }
+
+    &__right {
+      width: 100%;
+      max-width: 500px;
+    }
+
+    &__title {
+      text-align: start;
+    }
+  }
+
+  .about {
+    padding: 2rem 3rem 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+
+    &__detail-wrapper {
+      flex-direction: row;
+      align-items: center;
+      gap: 4rem;
+    }
+  }
+
+  .experiences {
+    padding: 4rem 3rem;
+
+    &__content {
+      flex-direction: row;
+      border: none;
+      padding: 0;
+
+      &--left::before {
+        left: calc(100% - 12px);
+      }
+
+      &--left {
+        flex: 1;
+        align-items: flex-start;
+        border-right: 1px solid $light;
+        gap: 1rem;
+        position: relative;
+        padding-right: 2rem;
+      }
+
+      &--right {
+        flex: 2;
+        padding-bottom: 2rem;
+      }
+    }
+
+    &__content:last-child &__content--right {
+      padding-bottom: 0;
+    }
+
+    &__content-title {
+      text-align: start;
+      margin-bottom: 0;
+    }
+  }
+
+  .footer {
+    padding: 4rem 4rem 2rem;
+    &__container {
+      flex-direction: row;
+      justify-content: space-between;
+      padding-bottom: 4rem;
+      border-bottom: 1px solid $light;
+    }
+
+    &__right {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    &__left {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__left-text {
+      max-width: 750px;
+    }
+
+    &__left-text-email {
+      padding: 0;
+      margin: auto 0;
+    }
+
+    &__copyright-container {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    &__copyright-left {
+      display: flex;
+      flex-direction: row;
+      gap: 0.75rem;
+    }
+  }
 }

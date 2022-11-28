@@ -18,6 +18,7 @@ import { ReactComponent as ExpressIcon } from './icons/express.svg'
 import { ReactComponent as FacebookIcon } from './icons/facebook.svg'
 import { ReactComponent as FigmaIcon } from './icons/figma.svg'
 import { ReactComponent as GithubIcon } from './icons/github.svg'
+import { ReactComponent as HeartIcon } from './icons/heart.svg'
 import { ReactComponent as HtmlIcon } from './icons/html.svg'
 import { ReactComponent as IllustratorIcon } from './icons/illustrator.svg'
 import { ReactComponent as InstagramIcon } from './icons/instagram.svg'
@@ -49,6 +50,7 @@ export {
   FacebookIcon,
   FigmaIcon,
   GithubIcon,
+  HeartIcon,
   HtmlIcon,
   IllustratorIcon,
   InstagramIcon,

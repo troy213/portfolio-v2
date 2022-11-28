@@ -11,6 +11,14 @@ body {
   min-width: 360px;
 }
 
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
 @mixin transition-ease($ms) {
   transition: all $ms ease-in-out;
 }

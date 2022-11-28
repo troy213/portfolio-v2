@@ -1,0 +1,57 @@
+@import '../../variables';
+
+.about {
+  padding: 2rem 1rem 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+
+  &__profile-photo {
+    max-width: 300px;
+  }
+
+  &__detail-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  &__detail {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  &__detail-icon {
+    padding: 0.5rem;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: $primary-color;
+  }
+
+  &__detail-content-wrapper {
+    display: flex;
+    gap: 1.5rem;
+
+    &:nth-child(2) .about__detail-icon {
+      background-color: $color-purple;
+    }
+
+    &:nth-child(3) .about__detail-icon {
+      background-color: $color-orange;
+    }
+  }
+
+  &__detail-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  &__desc {
+    max-width: 720px;
+  }
+}

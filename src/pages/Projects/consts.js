@@ -1,6 +1,13 @@
+import {
+  isometricOutstorePng,
+  isometricOngkirPng,
+  isometricPortfolioPng,
+} from '../../assets/images'
+
 export const PROJECTS = [
   {
     title: 'E-Commerce',
+    background: isometricOutstorePng,
     githubUrl: '#',
     appUrl: '#',
     description:
@@ -9,6 +16,7 @@ export const PROJECTS = [
   },
   {
     title: 'Raja Ongkir',
+    background: isometricOngkirPng,
     githubUrl: '#',
     appUrl: '#',
     description:
@@ -17,6 +25,7 @@ export const PROJECTS = [
   },
   {
     title: 'Portfolio v1',
+    background: isometricPortfolioPng,
     githubUrl: '#',
     appUrl: '#',
     description:

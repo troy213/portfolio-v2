@@ -3,6 +3,7 @@ import {
   FacebookIcon,
   LinkedinIcon,
   GithubIcon,
+  HeartIcon,
 } from '../../assets/icons'
 import './index.scss'
 
@@ -23,8 +24,10 @@ const Footer = () => {
           </p>
         </div>
         <div className='footer__right'>
-          <p className='footer__text text--bold'>Information</p>
-          <p className='footer__text text--light'>South Tangerang, Banten</p>
+          <div className='footer__text-information'>
+            <p className='footer__text text--bold'>Information</p>
+            <p className='footer__text text--light'>South Tangerang, Banten</p>
+          </div>
           <button className='btn btn-yellow'>Back to top</button>
           <a href='#' className='footer__socials'>
             <InstagramIcon className='footer__socials-icon' />
@@ -45,15 +48,17 @@ const Footer = () => {
         </div>
       </div>
       <div className='footer__copyright-container'>
-        <div className='footer__left'>
-          <p className='footer__text text--light text--3'>Erlangga's Journey</p>
-          <p className='footer__text text--light text--3'>
+        <div className='footer__copyright-left'>
+          <p className='footer__text text--light text--3 text--mono'>
+            Erlangga's Journey
+          </p>
+          <p className='footer__text text--light text--3 text--mono'>
             © 2022 Tritera Erlangga. All Rights Reserved
           </p>
         </div>
-        <div className='footer__right'>
-          <p className='footer__text text--light text--3'>
-            Design with ♥ by Tritera Erlangga
+        <div className='footer__copyright-right'>
+          <p className='footer__text text--light text--3 text--mono'>
+            Design with <HeartIcon /> by Tritera Erlangga
           </p>
         </div>
       </div>

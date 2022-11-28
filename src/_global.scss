@@ -1,5 +1,10 @@
 @import 'variables';
-// @import 'config';
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .text--bold {
   font-weight: 700;
@@ -13,12 +18,24 @@
   font-size: 0.75rem;
 }
 
+.text--5 {
+  font-size: 1.25rem;
+}
+
 .text--6 {
   font-size: 1.5rem;
 }
 
 .text--8 {
   font-size: 2rem;
+}
+
+.text--mono {
+  font-family: 'Roboto Mono', monospace;
+}
+
+.line-height--6 {
+  line-height: 150%;
 }
 
 .btn {
