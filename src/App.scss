@@ -1,0 +1,23 @@
+@import 'variables';
+
+.theme--dark {
+  .color--primary {
+    color: $primary-color-light;
+  }
+
+  .color--primary-light,
+  .hero__desc,
+  .about__desc,
+  .about__detail-content > p:last-child,
+  .skills__subtitle {
+    color: $light;
+  }
+
+  .navbar,
+  .hero,
+  .about,
+  .skills,
+  .projects {
+    background-color: $theme-dark;
+  }
+}

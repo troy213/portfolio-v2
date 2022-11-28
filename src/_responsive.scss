@@ -46,6 +46,12 @@
     }
   }
 
+  .skills {
+    &__wrapper {
+      padding: 4rem;
+    }
+  }
+
   .experiences {
     padding: 4rem 3rem;
 
@@ -84,7 +90,11 @@
   }
 
   .footer {
-    padding: 4rem 4rem 2rem;
+    &__wrapper {
+      padding: 4rem 4rem 2rem;
+      width: 100%;
+    }
+
     &__container {
       flex-direction: row;
       justify-content: space-between;

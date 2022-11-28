@@ -4,7 +4,9 @@ import { profilePhotoPng } from '../../assets/images'
 const About = () => {
   return (
     <section className='about'>
-      <h3 className='about__title text--bold text--8 text--mono'>About Me</h3>
+      <h3 className='about__title text--bold text--8 text--mono color--primary'>
+        About Me
+      </h3>
       <div className='about__detail-wrapper'>
         <img
           src={profilePhotoPng}
@@ -15,21 +17,21 @@ const About = () => {
           <div className='about__detail-content-wrapper'>
             <UserIcon className='about__detail-icon' />
             <div className='about__detail-content'>
-              <p className='text--bold text--mono'>Name</p>
+              <p className='text--bold text--mono color--primary'>Name</p>
               <p className='text--light'>Tritera Erlangga</p>
             </div>
           </div>
           <div className='about__detail-content-wrapper'>
             <CalendarIcon className='about__detail-icon' />
             <div className='about__detail-content'>
-              <p className='text--bold text--mono'>Age</p>
+              <p className='text--bold text--mono color--primary'>Age</p>
               <p className='text--light'>27 Years</p>
             </div>
           </div>
           <div className='about__detail-content-wrapper'>
             <MapIcon className='about__detail-icon' />
             <div className='about__detail-content'>
-              <p className='text--bold text--mono'>Location</p>
+              <p className='text--bold text--mono color--primary'>Location</p>
               <p className='text--light'>South Tangerang</p>
             </div>
           </div>

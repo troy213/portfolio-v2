@@ -12,6 +12,7 @@
     justify-content: center;
     align-items: center;
     gap: 1rem;
+    max-width: 700px;
   }
 
   &__right {
@@ -39,5 +40,13 @@
     display: flex;
     justify-content: center;
     gap: 1rem;
+  }
+
+  &__icon {
+    cursor: pointer;
+  }
+
+  & button {
+    padding: 1em 2em;
   }
 }

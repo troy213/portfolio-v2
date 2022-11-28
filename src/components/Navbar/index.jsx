@@ -2,16 +2,26 @@ import { MoonIcon, MenuIcon } from '../../assets/icons'
 
 const Navbar = () => {
   return (
-    <nav className='navbar'>
-      <span className='navbar__logo text--bold text--mono'>
+    <nav className='navbar color--primary'>
+      <a href='#home' className='navbar__logo text--bold text--mono'>
         Erlangga's Journey
-      </span>
+      </a>
       <ul>
-        <li className='navbar__link text--mono'>Home</li>
-        <li className='navbar__link text--mono'>Experiences</li>
-        <li className='navbar__link text--mono'>Skills</li>
-        <li className='navbar__link text--mono'>Projects</li>
-        <li className='navbar__link text--mono'>Contact</li>
+        <li className='navbar__link text--mono'>
+          <a href='#home'>Home</a>
+        </li>
+        <li className='navbar__link text--mono'>
+          <a href='#experiences'>Experiences</a>
+        </li>
+        <li className='navbar__link text--mono'>
+          <a href='#skills'>Skills</a>
+        </li>
+        <li className='navbar__link text--mono'>
+          <a href='#projects'>Projects</a>
+        </li>
+        <li className='navbar__link text--mono'>
+          <a href='#contact'>Contact</a>
+        </li>
         <li className='navbar__link text--mono'>
           <MoonIcon />
         </li>
