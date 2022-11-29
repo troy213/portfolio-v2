@@ -1,4 +1,87 @@
+import { useEffect, useRef } from 'react'
+
 const Avatar = () => {
+  const backHairRef = useRef()
+  const earsRef = useRef()
+  const faceRef = useRef()
+  const frontHairRef = useRef()
+  const eyeBrowsRef = useRef()
+  const noseRef = useRef()
+  const mouthRef = useRef()
+  const glassesRef = useRef()
+  const eyesRef = useRef()
+
+  const animate = (e) => {
+    const innerWidth = window.innerWidth
+    const innerHeight = window.innerHeight
+
+    const backHairRect = backHairRef.current.getBoundingClientRect()
+    const earsRect = earsRef.current.getBoundingClientRect()
+    const faceRect = faceRef.current.getBoundingClientRect()
+    const frontHairRect = frontHairRef.current.getBoundingClientRect()
+    const eyeBrowsRect = eyeBrowsRef.current.getBoundingClientRect()
+    const noseRect = noseRef.current.getBoundingClientRect()
+    const mouthRect = mouthRef.current.getBoundingClientRect()
+    const glassesRect = glassesRef.current.getBoundingClientRect()
+    const eyesRect = eyesRef.current.getBoundingClientRect()
+
+    const mouseRelativeBackHairX = e.clientX - backHairRect.left
+    const mouseRelativeBackHairY = e.clientY - backHairRect.top
+    const mouseRelativeEarsX = e.clientX - earsRect.left
+    const mouseRelativeEarsY = e.clientY - earsRect.top
+    const mouseRelativeFaceX = e.clientX - faceRect.left
+    const mouseRelativeFaceY = e.clientY - faceRect.top
+    const mouseRelativeFrontHairX = e.clientX - frontHairRect.left
+    const mouseRelativeFrontHairY = e.clientY - frontHairRect.top
+    const mouseRelativeEyeBrowsX = e.clientX - eyeBrowsRect.left
+    const mouseRelativeEyeBrowsY = e.clientY - eyeBrowsRect.top
+    const mouseRelativeNoseX = e.clientX - noseRect.left
+    const mouseRelativeNoseY = e.clientY - noseRect.top
+    const mouseRelativeMouthX = e.clientX - mouthRect.left
+    const mouseRelativeMouthY = e.clientY - mouthRect.top
+    const mouseRelativeGlassesX = e.clientX - glassesRect.left
+    const mouseRelativeGlassesY = e.clientY - glassesRect.top
+    const mouseRelativeEyesX = e.clientX - eyesRect.left
+    const mouseRelativeEyesY = e.clientY - faceRect.top
+
+    const backHairX = (mouseRelativeBackHairX / innerWidth) * 6 * -1
+    const backHairY = (mouseRelativeBackHairY / innerHeight) * 7 * -1
+    const earsX = (mouseRelativeEarsX / innerWidth) * 5 * -1
+    const earsY = (mouseRelativeEarsY / innerHeight) * 10 * -1
+    const faceX = (mouseRelativeFaceX / innerWidth) * 5
+    const faceY = (mouseRelativeFaceY / innerHeight) * 5
+    const frontHairX = (mouseRelativeFrontHairX / innerWidth) * 10
+    const frontHairY = (mouseRelativeFrontHairY / innerHeight) * 10
+    const eyeBrowsX = (mouseRelativeEyeBrowsX / innerWidth) * 15
+    const eyeBrowsY = (mouseRelativeEyeBrowsY / innerHeight) * 18
+    const noseX = (mouseRelativeNoseX / innerWidth) * 15
+    const noseY = (mouseRelativeNoseY / innerHeight) * 15
+    const mouthX = (mouseRelativeMouthX / innerWidth) * 15
+    const mouthY = (mouseRelativeMouthY / innerHeight) * 15
+    const glassesX = (mouseRelativeGlassesX / innerWidth) * 15
+    const glassesY = (mouseRelativeGlassesY / innerHeight) * 15
+    const eyesX = (mouseRelativeEyesX / innerWidth) * 25
+    const eyesY = (mouseRelativeEyesY / innerHeight) * 25
+
+    backHairRef.current.style.transform = `translate(${backHairX}px, ${backHairY}px)`
+    earsRef.current.style.transform = `translate(${earsX}px, ${earsY}px)`
+    faceRef.current.style.transform = `translate(${faceX}px, ${faceY}px)`
+    frontHairRef.current.style.transform = `translate(${frontHairX}px, ${frontHairY}px)`
+    eyeBrowsRef.current.style.transform = `translate(${eyeBrowsX}px, ${eyeBrowsY}px)`
+    noseRef.current.style.transform = `translate(${noseX}px, ${noseY}px)`
+    mouthRef.current.style.transform = `translate(${mouthX}px, ${mouthY}px)`
+    glassesRef.current.style.transform = `translate(${glassesX}px, ${glassesY}px)`
+    eyesRef.current.style.transform = `translate(${eyesX}px, ${eyesY}px)`
+  }
+
+  useEffect(() => {
+    document.getElementById('home').addEventListener('mousemove', animate)
+
+    return () => {
+      document.removeEventListener('mousemove', animate)
+    }
+  }, [])
+
   return (
     <div className='svg__container'>
       <svg
@@ -62,6 +145,7 @@ const Avatar = () => {
             fill='#333333'
             d='M142,385.645c0,0-56.023-161.145,102.488-161.145s103.195,161.145,103.195,161.145
 		S301,465.334,247,465.334S142,385.645,142,385.645z'
+            ref={backHairRef}
           />
           <path
             id='neck'
@@ -75,7 +159,7 @@ const Avatar = () => {
             d='M267.238,472.973c0,10.077-10.186,18.246-22.75,18.246l0,0
 		c-12.564,0-22.75-8.169-22.75-18.246v-17.51c0-10.077,10.186-18.246,22.75-18.246l0,0c12.564,0,22.75,8.169,22.75,18.246V472.973z'
           />
-          <g id='ears'>
+          <g id='ears' ref={earsRef}>
             <g id='Ear'>
               <circle fill='#EDE3D1' cx='153.155' cy='405.084' r='22.416' />
               <path
@@ -96,14 +180,16 @@ const Avatar = () => {
             fill='#EDE3D1'
             d='M330.822,392.387c0,40.287-32.236,72.947-72,72.947h-28.667c-39.765,0-72-32.66-72-72.947
 		v-59.438c0-40.288,32.235-72.947,72-72.947h28.667c39.764,0,72,32.659,72,72.947V392.387z'
+            ref={faceRef}
           />
           <path
             id='front-hair'
             fill='#333333'
             d='M337.559,332c0,0-57.846-9.002-79.346-40.5c0,0,6.5,26.5,24.5,36.5c0,0-47.5,6-76.5-51
 		c0,0-17.117,54-53.059,57.5c0,0,4.559-12.5,4.059-28.75S171.236,237,246.225,237S337.559,274.5,337.559,332z'
+            ref={frontHairRef}
           />
-          <g id='mouth'>
+          <g id='mouth' ref={mouthRef}>
             <path
               id='mouth-closed'
               fill='none'
@@ -138,8 +224,9 @@ const Avatar = () => {
             strokeMiterlimit='10'
             d='M232.75,398.591
 		c3.75,5.909,10.917,5.909,14.5,0'
+            ref={noseRef}
           />
-          <g id='eyes'>
+          <g id='eyes' ref={eyesRef}>
             <g id='eyes-open'>
               <ellipse
                 id='right-eyes'
@@ -179,7 +266,7 @@ const Avatar = () => {
               />
             </g>
           </g>
-          <g id='eyebrows'>
+          <g id='eyebrows' ref={eyeBrowsRef}>
             <path
               id='right-eyebrow'
               fill='none'
@@ -199,7 +286,7 @@ const Avatar = () => {
 			c6.813-9.188,21-7,25,0'
             />
           </g>
-          <g id='glasses'>
+          <g id='glasses' ref={glassesRef}>
             <circle
               fill='none'
               stroke='#555555'
