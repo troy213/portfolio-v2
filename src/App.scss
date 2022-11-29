@@ -18,15 +18,31 @@
   .navbar,
   .menu,
   .hero,
+  .hero__title::before,
   .about,
   .skills,
   .projects {
     background-color: $theme-dark;
     transition: background-color 500ms ease-in-out;
   }
+
+  .hero__title::after {
+    background-color: $light;
+  }
 }
 
 .theme--light {
+  .hero {
+    background-color: white;
+
+    &__title::before {
+      background-color: white;
+      transition: background-color 500ms ease-in-out, color 500ms ease-in-out;
+    }
+
+    transition: background-color 500ms ease-in-out, color 500ms ease-in-out;
+  }
+
   .navbar,
   .menu,
   .hero,

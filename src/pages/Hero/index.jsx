@@ -17,7 +17,7 @@ const Hero = () => {
         <span className='hero__title text--bold text--mono color--primary'>
           Tritera Erlangga
         </span>
-        <span className='hero__subtitle text--bold text--mono color--primary'>
+        <span className='hero__subtitle text--bold text--mono'>
           I'm a Web Developer
         </span>
         <p className='hero__desc text--light line-height--6'>

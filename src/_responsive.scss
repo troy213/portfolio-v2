@@ -33,6 +33,7 @@
 
     &__title {
       text-align: start;
+      font-size: clamp(2rem, 3vw + 1rem, 4rem);
     }
 
     &__desc {
