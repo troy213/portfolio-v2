@@ -8,6 +8,18 @@ import {
 } from '../../assets/icons'
 
 const Hero = () => {
+  const animateMouthOpen = () => {
+    const mouthOpened = document.getElementById('mouth-opened')
+
+    mouthOpened.style.display = 'block'
+  }
+
+  const animateMouthClose = () => {
+    const mouthOpened = document.getElementById('mouth-opened')
+
+    mouthOpened.style.display = 'none'
+  }
+
   return (
     <section className='hero' id='home'>
       <div className='hero__left'>
@@ -25,7 +37,11 @@ const Hero = () => {
           graduated from Budiluhur University with bachelor degree in Computer
           Science on 2018
         </p>
-        <button className='btn btn-orange'>
+        <button
+          className='btn btn-orange'
+          onMouseEnter={animateMouthOpen}
+          onMouseLeave={animateMouthClose}
+        >
           Resume <DownloadIcon className='btn-icon' />
         </button>
         <div className='hero__icon-container'>

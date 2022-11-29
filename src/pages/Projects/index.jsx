@@ -10,7 +10,7 @@ const Projects = () => {
       </h3>
       <div className='projects__cards-container'>
         {PROJECTS.map((project, index) => {
-          return <Card {...project} key={index} />
+          return <Card {...project} key={index} nthChild={index + 1} />
         })}
       </div>
     </section>

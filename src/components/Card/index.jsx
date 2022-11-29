@@ -5,7 +5,7 @@ const Card = (props) => {
 
   return (
     <div
-      className='card'
+      className='card hidden'
       style={{ backgroundImage: `url(${background})`, backgroundSize: 'cover' }}
     >
       <div className='card__content-wrapper'>

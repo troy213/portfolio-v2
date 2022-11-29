@@ -21,7 +21,7 @@ const ExperiencesGroup = (props) => {
                   {time}
                 </em>
               </div>
-              <div className='experiences__content--right'>
+              <div className='experiences__content--right hidden'>
                 <p className='experiences__content-major text--bold text--mono'>
                   {major}
                 </p>

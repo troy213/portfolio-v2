@@ -199,7 +199,7 @@ const Avatar = () => {
               d='M219.625,431
 			c15.583,6.688,44.875,0,50.313-8.563'
             />
-            <g id='mouth-open_1_' display='none'>
+            <g id='mouth-opened' display='none'>
               <path
                 id='mouth-open'
                 display='inline'
