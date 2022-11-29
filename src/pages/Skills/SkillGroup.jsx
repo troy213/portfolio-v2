@@ -3,7 +3,7 @@ const SkillGroup = (props) => {
 
   return (
     <>
-      <p className='skills__subtitle text--6 text--mono'>{title}</p>
+      <p className='skills__subtitle text--bold text--6 text--mono'>{title}</p>
       <div className='skills__icons-container color--primary'>
         {data.map((skill, index) => {
           return <skill.icon key={index} className='skills__icon' />

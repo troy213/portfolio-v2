@@ -11,6 +11,10 @@
     max-width: 890px;
   }
 
+  &__subtitle {
+    color: $color-orange;
+  }
+
   &__icons-container {
     display: flex;
     flex-wrap: wrap;

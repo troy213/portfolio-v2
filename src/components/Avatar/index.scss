@@ -6,5 +6,27 @@
   & svg {
     width: 100%;
     height: auto;
+
+    & #eyes-open {
+      animation: eyesBlink 6s linear infinite;
+    }
+  }
+}
+
+@keyframes eyesBlink {
+  0% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 1;
+  }
+  96% {
+    opacity: 0;
+  }
+  99% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
