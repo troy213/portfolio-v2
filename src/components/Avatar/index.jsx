@@ -83,7 +83,7 @@ const Avatar = () => {
   }, [])
 
   return (
-    <div className='svg__container'>
+    <div className='svg__container hidden'>
       <svg
         version='1.1'
         id='Layer_1'

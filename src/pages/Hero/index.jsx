@@ -7,7 +7,10 @@ import {
   FacebookIcon,
   LinkedinIcon,
   GithubIcon,
+  RobotIcon,
+  CommonCvIcon,
 } from '../../assets/icons'
+import { commonCv } from '../../assets/pdfs'
 
 const Hero = () => {
   const { isDarkMode } = useTheme()
@@ -31,13 +34,22 @@ const Hero = () => {
         onClose={() => setModalIsOpen(false)}
         isDarkMode={isDarkMode}
       >
-        <div className='modal__content'>
+        <div className='modal__content--default'>
           <p className='mb-4'>Which type of CV do you want to download?</p>
-          <button className='btn btn-orange p-4'>ATS-Friendly CV</button>
-          <button className='btn btn-orange p-4'>
-            Common CV without Certificate
-          </button>
-          <button className='btn btn-orange p-4'>Common CV</button>
+          <a href='#' className='btn btn-orange p-4'>
+            <RobotIcon />
+            <span>ATS-Friendly CV</span>
+          </a>
+          <a
+            href={commonCv}
+            download
+            target='_blank'
+            rel='noreferrer noopener'
+            className='btn btn-orange p-4'
+          >
+            <CommonCvIcon />
+            <span>Common CV</span>
+          </a>
         </div>
       </Modal>
       <div className='hero__left'>

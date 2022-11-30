@@ -12,12 +12,12 @@ const Card = (props) => {
         <div className='card__header'>
           <p className='card__title text--bold text--mono'>{title}</p>
           <div className='card__btn-container'>
-            <a href={githubUrl}>
+            <a href={githubUrl} target='_blank' rel='noreferrer noopener'>
               <button>
                 <GithubIcon className='flex-center' />
               </button>
             </a>
-            <a href={appUrl}>
+            <a href={appUrl} target='_blank' rel='noreferrer noopener'>
               <button className='flex-center'>
                 <ExitToAppIcon />
               </button>
