@@ -75,7 +75,7 @@ const Avatar = () => {
   }
 
   useEffect(() => {
-    document.getElementById('home').addEventListener('mousemove', animate)
+    document.getElementById('hero').addEventListener('mousemove', animate)
 
     return () => {
       document.removeEventListener('mousemove', animate)

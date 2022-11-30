@@ -1,9 +1,10 @@
 import { useState, useEffect } from 'react'
 import { Navbar } from './components'
 import { Hero, About, Experiences, Projects, Skills, Footer } from './pages'
+import useTheme from './hooks/useTheme'
 
 const App = () => {
-  const [isDarkMode, setIsDarkMode] = useState(false)
+  const { isDarkMode, setIsDarkMode } = useTheme()
   const [isFirstRender, setIsFirstRender] = useState(true)
 
   useEffect(() => {
@@ -35,6 +36,7 @@ const App = () => {
   return (
     <div
       className={`container${isDarkMode ? ' theme--dark' : ' theme--light'}`}
+      id='home'
     >
       <Navbar isDarkMode={isDarkMode} toggleDarkMode={() => toggleDarkMode()} />
       <Hero />

@@ -1,4 +1,6 @@
-import { Avatar } from '../../components'
+import { useState } from 'react'
+import useTheme from '../../hooks/useTheme'
+import { Avatar, Modal } from '../../components'
 import {
   DownloadIcon,
   InstagramIcon,
@@ -8,6 +10,8 @@ import {
 } from '../../assets/icons'
 
 const Hero = () => {
+  const { isDarkMode } = useTheme()
+  const [modalIsOpen, setModalIsOpen] = useState(false)
   const animateMouthOpen = () => {
     const mouthOpened = document.getElementById('mouth-opened')
 
@@ -21,7 +25,21 @@ const Hero = () => {
   }
 
   return (
-    <section className='hero' id='home'>
+    <section className='hero' id='hero'>
+      <Modal
+        open={modalIsOpen}
+        onClose={() => setModalIsOpen(false)}
+        isDarkMode={isDarkMode}
+      >
+        <div className='modal__content'>
+          <p className='mb-4'>Which type of CV do you want to download?</p>
+          <button className='btn btn-orange p-4'>ATS-Friendly CV</button>
+          <button className='btn btn-orange p-4'>
+            Common CV without Certificate
+          </button>
+          <button className='btn btn-orange p-4'>Common CV</button>
+        </div>
+      </Modal>
       <div className='hero__left'>
         <span className='hero__pre-title text--bold text--mono color--primary-light'>
           Hi, I'm
@@ -41,6 +59,7 @@ const Hero = () => {
           className='btn btn-orange'
           onMouseEnter={animateMouthOpen}
           onMouseLeave={animateMouthClose}
+          onClick={() => setModalIsOpen(true)}
         >
           Resume <DownloadIcon className='btn-icon' />
         </button>

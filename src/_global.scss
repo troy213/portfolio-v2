@@ -81,6 +81,14 @@
   color: $primary-color-light;
 }
 
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.p-4 {
+  padding: 1em;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .hidden {
     opacity: 0;
