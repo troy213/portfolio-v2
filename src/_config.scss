@@ -29,6 +29,26 @@ ul {
   list-style-type: none;
 }
 
+::-webkit-scrollbar {
+  width: 1rem;
+}
+
+body:has(.container.theme--light)::-webkit-scrollbar-track {
+  background: $light;
+}
+
+body:has(.container.theme--dark)::-webkit-scrollbar-track {
+  background: $theme-dark;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $primary-color-dark;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: $primary-color;
+}
+
 @mixin transition-ease($ms) {
   transition: all $ms ease-in-out;
 }

@@ -4,6 +4,7 @@ import { Hero, About, Experiences, Projects, Skills, Footer } from './pages'
 
 const App = () => {
   const [isDarkMode, setIsDarkMode] = useState(false)
+  const [isFirstRender, setIsFirstRender] = useState(true)
 
   useEffect(() => {
     const theme = JSON.parse(localStorage.getItem('theme'))
@@ -11,6 +12,8 @@ const App = () => {
     if (theme !== null) {
       setIsDarkMode(theme)
     }
+
+    if (isFirstRender) setIsFirstRender(false)
   }, [])
 
   const obeserver = new IntersectionObserver((entries) => {

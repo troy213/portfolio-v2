@@ -39,6 +39,18 @@
     &__desc {
       text-align: start;
     }
+
+    #eyes,
+    #face,
+    #glasses,
+    #nose,
+    #mouth,
+    #ears,
+    #eyebrows,
+    #back-hair,
+    #front-hair {
+      transition: transform 100ms linear;
+    }
   }
 
   .about {
