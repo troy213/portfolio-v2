@@ -5,6 +5,7 @@
   flex-direction: column-reverse;
   justify-content: center;
   gap: 2rem;
+  overflow: hidden;
 
   &__left {
     display: flex;

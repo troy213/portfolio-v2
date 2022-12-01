@@ -27,6 +27,19 @@ const Hero = () => {
     mouthOpened.style.display = 'none'
   }
 
+  const docxDownload = () => {
+    fetch('/files/ATS-CV-Tritera-Erlangga.docx').then((response) => {
+      console.log(response)
+      response.blob().then((blob) => {
+        let url = window.URL.createObjectURL(blob)
+        let a = document.createElement('a')
+        a.href = url
+        a.download = 'ATS-CV-Tritera-Erlangga.docx'
+        a.click()
+      })
+    })
+  }
+
   return (
     <section className='hero' id='hero'>
       <Modal
@@ -36,10 +49,10 @@ const Hero = () => {
       >
         <div className='modal__content--default'>
           <p className='mb-4'>Which type of CV do you want to download?</p>
-          <a href='#' className='btn btn-orange p-4'>
+          <button className='btn btn-orange p-4' onClick={docxDownload}>
             <RobotIcon />
             <span>ATS-Friendly CV</span>
-          </a>
+          </button>
           <a
             href={commonCv}
             download
