@@ -1,6 +1,6 @@
 # triteraerlangga.com - v2
 
-![hero](https://github.com/troy213/portfolio-v2/media/hero.jpg)
+![hero](https://github.com/troy213/portfolio-v2/blob/media/media/hero.jpg)
 
 ## 🚨 Disclaimer
 
