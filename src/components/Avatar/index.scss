@@ -10,6 +10,14 @@
     & #eyes-open {
       animation: eyesBlink 6s linear infinite;
     }
+
+    & #blob-s {
+      animation: floatingSmall 2s alternate infinite;
+    }
+
+    & #blob-xs {
+      animation: floatingXSmall 1s alternate-reverse infinite;
+    }
   }
 }
 
@@ -28,5 +36,23 @@
   }
   100% {
     opacity: 1;
+  }
+}
+
+@keyframes floatingSmall {
+  from {
+    transform: translateY(-15px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes floatingXSmall {
+  from {
+    transform: translate(2px, -5px);
+  }
+  to {
+    transform: translate(0px, 0px);
   }
 }
