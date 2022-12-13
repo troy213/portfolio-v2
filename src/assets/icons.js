@@ -40,11 +40,10 @@ import { ReactComponent as SassIcon } from './icon/sass.svg'
 import { ReactComponent as TypescriptIcon } from './icon/typescript.svg'
 import { ReactComponent as UserIcon } from './icon/user.svg'
 import { ReactComponent as WebpackIcon } from './icon/webpack.svg'
+import { ReactComponent as NextJsIcon } from './icon/nextjs.svg'
+import { ReactComponent as GitIcon } from './icon/git.svg'
 
 export {
-  MenuIcon,
-  ExitToAppIcon,
-  DownloadIcon,
   AudacityIcon,
   BootstrapIcon,
   CalendarIcon,
@@ -53,6 +52,7 @@ export {
   FacebookIcon,
   FigmaIcon,
   GithubIcon,
+  GitIcon,
   HeartIcon,
   HtmlIcon,
   IllustratorIcon,
@@ -64,6 +64,7 @@ export {
   MuiIcon,
   MySqlIcon,
   NodeJsIcon,
+  NextJsIcon,
   OfficeIcon,
   PhotoshopIcon,
   PremiereIcon,
@@ -72,6 +73,9 @@ export {
   TypescriptIcon,
   UserIcon,
   WebpackIcon,
+  MenuIcon,
+  ExitToAppIcon,
+  DownloadIcon,
   DarkModeOutlinedIcon as MoonIcon,
   HomeOutlinedIcon as HomeIcon,
   WorkOutlineOutlinedIcon as ExperiencesIcon,

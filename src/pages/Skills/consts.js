@@ -17,6 +17,8 @@ import {
   PremiereIcon,
   FigmaIcon,
   AudacityIcon,
+  NextJsIcon,
+  GitIcon,
 } from '../../assets/icons'
 
 export const COMPUTER_SKILLS = {
@@ -24,39 +26,166 @@ export const COMPUTER_SKILLS = {
   data: [
     {
       icon: HtmlIcon,
+      desc: ['Basic HTML', 'Basic accessibility', 'Forms', 'Semantic Elements'],
     },
     {
       icon: CssIcon,
+      desc: [
+        'Basic CSS (Selector, Specificity, Box Model, Positioning)',
+        'Layout (Flexbox, Grid)',
+        'CSS Module',
+        'Pseudo Elements/Classes',
+        'Media Queries',
+        'Animations',
+      ],
     },
     {
       icon: JavascriptIcon,
+      desc: [
+        'Basic JS (Var, Let, Const, Array, Hoisting, Scoping)',
+        'DOM Manipulation',
+        'Arrow Function',
+        'Callbacks',
+        'Event Listeners',
+        'Promises',
+        'Async Await',
+        'Fetch',
+        'Browser Storage (Cookies, Session, Local)',
+        'String/Array Method',
+        'ES6',
+        'Ternary Operator',
+        'Destructuring/Spread Operator',
+        'JSON',
+        'Regex',
+      ],
     },
     {
       icon: TypescriptIcon,
+      desc: [
+        'Variable declaration',
+        'Interface',
+        'Union and Aliases',
+        'Class',
+        'Generic Interface and Function',
+        'Enum',
+      ],
     },
     {
       icon: NodeJsIcon,
+      desc: [
+        'Basic JS Knowledge',
+        'Callbacks',
+        'Promises',
+        'Async Await',
+        'NodeJS API (HTTP, OS, File System, Events)',
+        'Middleware',
+        'REST API',
+        'Cookie',
+      ],
     },
     {
       icon: ExpressIcon,
+      desc: [
+        'Basic Express Knowledge',
+        'CORS',
+        'JWT',
+        'dotenv',
+        'MySQL connection',
+        'MVC Architecture',
+        'BCrypt',
+      ],
     },
     {
       icon: ReactIcon,
+      desc: [
+        'JSX',
+        'Functional/Class Components',
+        'Reusable Component',
+        'CSS Module',
+        'Absolute Imports and Module Paths',
+        'Code Splitting',
+        'Props',
+        'State',
+        'Hooks (useState, useEffect, useContext, useReducer, useRef, useMemo, useCallback)',
+        'Custom Hooks',
+        'React Router (Protected Route, Public Route)',
+        'Redux',
+        'Redux Toolkit',
+        'Redux Saga',
+        'Axios',
+        'Rechart',
+      ],
     },
     {
       icon: MySqlIcon,
+      desc: [
+        'Basic SQL queries (CREATE, DROP, ALTER, SELECT, UPDATE, INSERT, DELETE)',
+        'Priviliges',
+        'Trigger',
+        'Procedure',
+        'View',
+      ],
     },
     {
       icon: SassIcon,
+      desc: [
+        'Variables',
+        'Map',
+        'Nesting',
+        'Interpolation',
+        'Partials',
+        'Function',
+        'Mixin',
+        'Extend',
+        'Math Operations',
+      ],
     },
     {
       icon: BootstrapIcon,
+      desc: ['Responsive Website', 'Layouting', 'Bootstrap component'],
     },
     {
       icon: MuiIcon,
+      desc: ['Responsive Website', 'Layouting', 'Material UI Component'],
     },
     {
       icon: WebpackIcon,
+      desc: [
+        'Installing Webpack',
+        'Configure Webpack',
+        'Loader (sass-loader, css-loader, style-loader, html-loader, file-loader)',
+        'Caching',
+        'HtmlWebpackPlugin',
+        'Clean-webpack-plugin',
+        'Css-minimizer-webpack-plugin',
+        'Terser-webpack-plugin',
+      ],
+    },
+    {
+      icon: GitIcon,
+      desc: [
+        'Git Basic (add, status, diff, commit, restore, reset, clone, log, checkout, pull, push)',
+        'Branching',
+        'Stashing',
+        'Merging',
+        'Git Ignore',
+      ],
+    },
+    {
+      icon: NextJsIcon,
+      desc: [
+        'Routing and Navigating',
+        'Pre-Rendering (getStaticPaths, getStaticProps, getServerSideProps)',
+        'Fallback',
+        'SSG, ISR, SSR, CSR',
+        'SWR (Stale While Revalidate)',
+        'API',
+        'SEO',
+        'Static HTML Export',
+        'Basic next-auth',
+        'Client Side protected route',
+        'Server Side authentication and authorization',
+      ],
     },
   ],
 }
@@ -66,21 +195,59 @@ export const OTHER_SKILLS = {
   data: [
     {
       icon: OfficeIcon,
+      desc: [
+        'Proficient in Excel (IF, AND, OR, VLOOKUP/HLOOKUP, INDIRECT, and any basic excel formula)',
+        'Pivot Table',
+        'Conditional Formating',
+      ],
     },
     {
       icon: PhotoshopIcon,
+      desc: [
+        'Layering',
+        'Masking and Clipping',
+        'Layer Effects',
+        'Adjustment Layer',
+        'Smart Object',
+        'Basic photo manipulation',
+      ],
     },
     {
       icon: IllustratorIcon,
+      desc: [
+        'Capable to create Flat Characters from sketch',
+        'Logo Design',
+        'Background',
+        'Basic knowledge about color scheme',
+      ],
     },
     {
       icon: PremiereIcon,
+      desc: [
+        'Basic video editing',
+        'Transition',
+        'Keyframes',
+        'Color Correction and Color grading',
+      ],
     },
     {
       icon: FigmaIcon,
+      desc: [
+        'Capable to create Design Mock Up/Skeleton from paper sketch',
+        'Prototyping',
+        'Reusable Component',
+        'Basic knowledge about color scheme',
+      ],
     },
     {
       icon: AudacityIcon,
+      desc: [
+        'Basic Audio editting',
+        'Mixing',
+        'Compressor',
+        'Equalization',
+        'Noise Reduction',
+      ],
     },
   ],
 }

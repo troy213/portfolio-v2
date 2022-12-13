@@ -11,10 +11,12 @@
 
   &__container {
     position: relative;
+    margin: 0 2rem;
     background-color: $light;
-    border-radius: 0.5rem;
+    border-radius: 1rem;
     min-height: 100px;
     min-width: 100px;
+    max-width: 500px;
     display: flex;
     justify-content: center;
     gap: 1rem;
