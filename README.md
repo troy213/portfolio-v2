@@ -1,4 +1,4 @@
-# triteraerlangga.com - v2
+<div align='center'><h1>triteraerlangga.com - v2</h1></div>
 
 ![hero](https://github.com/troy213/portfolio-v2/blob/media/media/hero.jpg)
 
